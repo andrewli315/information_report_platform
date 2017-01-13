@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 最新編譯和最佳化的 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link href="reception.css" rel="stylesheet" type="text/css">
 <title>資訊回報平台</title>
 <style type="text/css"> </style>
@@ -15,16 +17,41 @@
 		</div>
 
        		<section class="body_section">
-       		<article class = "left_article">
-       			<form action="action_page.php">
-					<h3>地點<input type="text" name="location" value=""></h3>
-					<h3>事件<input type="text" name="event" value=""></h3>
-					Lat︰<input id="Lat" name="inLatLng" type="text" size="40" >
-					<br>
-					Lng: <input id="Lng" name="inLatLng" type="text" size="40" >
-					<br><br>
-					<input type="submit" value="送出">
-				</form> 
+       		<article class = "left_article" >
+			<form >
+			<br>
+			    <div class="form-group row">
+			      <label for="inputEmail3" class="col-sm-2 col-form-label">地點</label>
+			      <div class="col-sm-10">
+			        <input type="text" class="form-control" id="location" size="40">
+			      </div>
+			    </div>
+			    <div class="form-group row">
+			      <label for="inputPassword3" class="col-sm-2 col-form-label">事件</label>
+			      <div class="col-sm-10">
+			        <input type="text" class="form-control" id="event" size="40" >
+			      </div>
+			    </div>
+			    <div class="form-group row">
+			      <label for="inputPassword3" class="col-sm-2 col-form-label">
+			    緯度︰</label>
+			    <div class="col-sm-10">
+			    	<input id="Lat"  class="form-control"  type="text" size="40" >
+			      </div>
+			    </div>
+					<div class="form-group row">
+			      <label for="inputPassword3" class="col-sm-2 col-form-label">
+			    經度︰</label>
+			    <div class="col-sm-10">
+			    	<input id="Lng"  class="form-control" type="text" size="40" >
+			      </div>
+			    </div>
+			    <div class="form-group row">
+				    <div class="offset-sm-2 col-sm-10">
+				    	<button type="submit" class="btn btn-primary">送出</button>
+				    </div>
+			    </div>
+			  </form>
        		</article>
 		<div id="map"></div>
     </section>
